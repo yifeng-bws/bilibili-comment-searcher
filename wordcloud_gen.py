@@ -1,5 +1,6 @@
 from wordcloud import WordCloud
 import jieba
+from bilibili_api import get_commments
 
 def get_cloud(text):
     # 分词
@@ -11,8 +12,12 @@ def get_cloud(text):
     w.generate(s)
     w.to_file('词云.png')
 
-if __name__ == '__main__':
-    with open('comments.txt','r',encoding='utf-8') as file:
-        comments = file.read()
+def main():
+    bvid = "BV1xYBrBxEof"
+    max_chars = 300
 
+    comments = get_commments(bvid,max_chars=max_chars)
     get_cloud(comments)
+
+if __name__ == '__main__':
+    main()
