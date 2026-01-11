@@ -1,6 +1,6 @@
-#bilibili-comment-searcher
+# bilibili-comment-searcher
 
-#备注
+# 备注
 
 >目前main文件还没有内容
 >
