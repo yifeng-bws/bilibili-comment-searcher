@@ -1,6 +1,6 @@
 from wordcloud import WordCloud
 import jieba
-from bilibili_api import get_commments
+from src.bilibili_api import get_commments
 
 def get_cloud(text):
     # 分词
