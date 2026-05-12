@@ -32,7 +32,7 @@ bilibili-comment-searcher/
 ### 1. 克隆仓库
 
 ```bash
-git clone https://github.com/你的用户名/bilibili-comment-searcher.git
+git clone https://github.com/yifeng-bws/bilibili-comment-searcher.git
 cd bilibili-comment-searcher
 ```
 
