@@ -1,5 +1,5 @@
 from src.bilibili_api import get_commments
-from wordcloud_gen import get_cloud
+from src.wordcloud_gen import get_cloud
 import webbrowser
 
 def main():
