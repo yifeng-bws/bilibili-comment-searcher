@@ -1,6 +1,6 @@
 from wordcloud import WordCloud
 import jieba
-from bilibili_api import get_commments
+from bilibili_api import get_comments
 
 def get_cloud(text):
     # 分词
@@ -16,7 +16,7 @@ def main():
     bvid = "BV1xYBrBxEof"
     max_chars = 300
 
-    comments = get_commments(bvid,max_chars=max_chars)
+    comments = get_comments(bvid,max_chars=max_chars)
     get_cloud(comments)
 
 if __name__ == '__main__':

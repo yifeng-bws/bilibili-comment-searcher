@@ -1,7 +1,6 @@
 import requests
 import re
 
-# 设置BV号以及最大字符数
 bvid = "BV1xYBrBxEof"
 max_chars = 300
 
@@ -13,7 +12,7 @@ def clean_text(text):
     text = re.sub(r'\s+', ' ', text).strip()
     return text
 
-def get_commments(bvid,max_chars):
+def get_comments(bvid,max_chars):
     # 获取视频信息
     info_url = f"https://api.bilibili.com/x/web-interface/view?bvid={bvid}"
     info_res = requests.get(info_url, headers={
@@ -65,6 +64,6 @@ def get_commments(bvid,max_chars):
         return all_text[:max_chars]
 
 if __name__ == '__main__':
-    comments = get_commments(bvid,max_chars)
+    comments = get_comments(bvid,max_chars)
     with open('comments.txt','w',encoding='utf-8') as file:
         file.write(comments)
