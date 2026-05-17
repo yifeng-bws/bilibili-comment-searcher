@@ -10,22 +10,6 @@
 - 🌐 可选择是否用浏览器打开对应视频页面
 - ⚙️ 支持自定义最大字符数量
 
-## 📁 项目结构
-bilibili-comment-searcher/
-
-├── src/
-
-│ ├── main.py # 主程序入口
-
-│ ├── bilibili_api.py # 评论获取与清洗模块
-
-│ └── wordcloud_gen.py # 词云生成模块
-
-├── requirements.txt # 依赖包列表
-
-├── README.md # 项目说明文档
-
-└── LICENSE # 许可证文件
 
 ## 🔧 安装与运行
 
@@ -62,17 +46,6 @@ python main.py
 pip install requests jieba wordcloud
 ```
 
-## 📸 示例运行
-
-```text
-==============================
-bilibili评论获取器
-请输入视频BV号：BV1xYBrBxEof
-请输入获取的最大字符数量：500
-是否使用浏览器打开当前网页？是/否
-```
-
-运行后会在当前目录生成 词云.png
 
 ## 📌 注意事项
 
@@ -87,11 +60,7 @@ bilibili评论获取器
 - main.py: 主程序入口，处理用户交互
 - bilibili_api.py: 负责从B站API获取评论并清洗数据
 - wordcloud_gen.py: 使用jieba分词和wordcloud生成词云图片
-
-
-## 📄 许可证
-
-本项目基于 MIT 许可证开源
+- gui.py: gui页面
 
 
 ## 📝 TODO
