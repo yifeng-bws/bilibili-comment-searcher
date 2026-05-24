@@ -1,6 +1,6 @@
 import tkinter as tk
-from bilibili_api import get_comments
-from wordcloud_gen import get_cloud
+from src.bilibili_api import get_comments
+from src.wordcloud_gen import get_cloud
 from tkinter import messagebox
 
 class App:
